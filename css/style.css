@@ -1,15 +1,38 @@
 /*fonts*/
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
 @font-face {
-    font-family: 'Muller ExtraBold DEMO';
-    src: url('../fonts/MullerExtraBoldDEMO.eot');
-    src: local('Muller ExtraBold DEMO'), local('MullerExtraBoldDEMO'),
-    url('../fonts/MullerExtraBoldDEMO.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MullerExtraBoldDEMO.woff') format('woff'),
-    url('../fonts/MullerExtraBoldDEMO.ttf') format('truetype');
-    font-weight: 800;
+    font-family: 'Muller';
+    font-weight: bold;
+    src: url('../fonts/MullerBold.ttf') format('truetype');
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'Muller-Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Fontfabric - MullerLight.otf') format('opentype');
+}
+@font-face{
+    font-family: 'Muller-Meduim';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/MullerMedium.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'MyriadProRegular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/MyriadProRegular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'VisbyCFExtraBold';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/VisbyCFExtraBold.ttf') format('truetype');
+}
 body {
     margin: 0;
     padding: 0;
@@ -30,6 +53,7 @@ body {
     background-image: url("../img/magnet.png");
     background-repeat: no-repeat;
     background-position-x: right;
+    background-position-y: 27px;
 }
 .logo::before {
     content: "";
@@ -61,6 +85,71 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+.header-headline {
+    margin-top: 232px;
+    margin-left: 189px;
+
+    width: 920px;
+}
+.small-headline {
+    font-family: 'Muller';
+    font-weight: bold;
+    font-size: 32px;
+    color: #44a09b;
+}
+.headline {
+    display: block;
+    margin-top: 25px;
+    font-family: 'Muller-Regular';
+    font-size: 63px;
+    line-height: 85px;
+    letter-spacing: 1px;
+}
+.headline-bold{
+    font-family: 'Muller';
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.register-now {
+    box-sizing: border-box;
+    width: 825px;
+    height: 212px;
+
+    padding-left: 190px;
+    padding-top: 44px;
+    margin-top: 54px;
+    border-radius: 0px 110px 110px 0px;
+    background-color: #ffffff;
+    border: 0px;
+}
+.time-working {
+    font-family: 'Muller-Meduim';
+    font-size: 27px;
+    color: #ff8141;
+}
+.register-url {
+    display: block;
+    box-sizing: border-box;
+    width: 495px;
+    height: 67px;
+    line-height: 65px;
+    margin-top: 17px;
+    padding-top: 4px;
+    padding-left: 10px;
+    border-radius: 35px;
+    text-align: center;
+
+    font-family: 'Muller';
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+
+    background-color: #ff8141;
+}
 .scroll-down {
     position: absolute;
     width: 1920px;
@@ -68,28 +157,69 @@ body {
 
     bottom: -6px;
 }
-
-.big-triangle{
-    position: relative;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 41px 29px 30px 30px;
-    border-color: #ffffff transparent transparent transparent;
+.scroll-down a {
+    text-decoration: none;
 }
-.big-triangle::after{
-    box-shadow: -1px -1px 10px -2px rgba(0,0,0,0.5);
+.scroll-down-text{
+    font-family: 'MyriadProRegular';
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
 }
-
+.scroll-triangle {
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
 /*main content page*/
 .main-content {
     width: 1920px;
 }
 .use-pewtoon {
+    box-sizing:border-box;
+    position: relative;
+    padding-top: 1px;
     width: 1085px;
     min-height: 915px;
 
     background: linear-gradient(210deg, #f7d5b8 50%, #fac9ae 50%);
+}
+.play-circle {
+    margin-top: 380px;
+    left: -3px;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: rgba(3,3,3,0.5);
+
+}
+.play-triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 25px 26px 45px;
+    border-color: transparent transparent transparent #ffffff;
+
+    top: 67px;
+    left: 75px;
+}
+/*footer*/
+.main-footer {
+    width: 1920px;
+    height: 205px;
+    background-color: #273d50;
+    text-align: center;
+}
+.footer-headline{
+    font-family: 'VisbyCFExtraBold';
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 59px;
+    line-height: 224px;
 }
 /*special class*/
 .centered {
