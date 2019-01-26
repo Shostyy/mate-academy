@@ -1,0 +1,98 @@
+/*fonts*/
+@font-face {
+    font-family: 'Muller ExtraBold DEMO';
+    src: url('../fonts/MullerExtraBoldDEMO.eot');
+    src: local('Muller ExtraBold DEMO'), local('MullerExtraBoldDEMO'),
+    url('../fonts/MullerExtraBoldDEMO.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MullerExtraBoldDEMO.woff') format('woff'),
+    url('../fonts/MullerExtraBoldDEMO.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.main-header {
+    width: 1920px;
+    min-height: 1080px;
+    box-sizing: border-box;
+    padding-top: 1px;
+
+    background: linear-gradient(180deg, #f9e9a7, #63c9c4);
+}
+.for-background {
+    width: 1920px;
+    min-height: 1080px;
+    box-sizing: border-box;
+    position: relative;
+    background-image: url("../img/magnet.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+.logo::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 110px;
+
+    transform: rotate(-5deg);
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.logo {
+    width: 200px;
+    height: 110px;
+
+    margin-left: 180px;
+    margin-top: -24px;
+}
+
+.logo a{
+    display: block;
+    position: relative;
+    top: -96px;
+    width: 200px;
+    height: 110px;
+
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.scroll-down {
+    position: absolute;
+    width: 1920px;
+    text-align: center;
+
+    bottom: -6px;
+}
+
+.big-triangle{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 41px 29px 30px 30px;
+    border-color: #ffffff transparent transparent transparent;
+}
+.big-triangle::after{
+    box-shadow: -1px -1px 10px -2px rgba(0,0,0,0.5);
+}
+
+/*main content page*/
+.main-content {
+    width: 1920px;
+}
+.use-pewtoon {
+    width: 1085px;
+    min-height: 915px;
+
+    background: linear-gradient(210deg, #f7d5b8 50%, #fac9ae 50%);
+}
+/*special class*/
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
