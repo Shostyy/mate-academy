@@ -1,42 +1,61 @@
 /*fonts*/
-h1, h2{
+h1, h2 {
     margin: 0;
     padding: 0;
 }
+
 @font-face {
     font-family: 'Muller';
     font-weight: bold;
     src: url('../fonts/MullerBold.ttf') format('truetype');
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Muller-Regular';
     font-weight: normal;
     font-style: normal;
     src: url('../fonts/MullerLight.ttf') format('truetype');
 }
-@font-face{
+
+@font-face {
     font-family: 'Muller-Meduim';
     font-weight: normal;
     font-style: normal;
     src: url('../fonts/MullerMedium.ttf') format('truetype');
 }
-@font-face{
+
+@font-face {
     font-family: 'MyriadProRegular';
     font-weight: normal;
     font-style: normal;
     src: url('../fonts/MyriadProRegular.ttf') format('truetype');
 }
-@font-face{
+
+@font-face {
     font-family: 'VisbyCFExtraBold';
     font-weight: normal;
     font-style: normal;
     src: url('../fonts/VisbyCFExtraBold.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'VisbyCFLight';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/VisbyCFLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Story';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/story.ttf') format('truetype');
+}
+
 body {
     margin: 0;
     padding: 0;
 }
+
 .main-header {
     box-sizing: border-box;
     width: 1920px;
@@ -44,6 +63,7 @@ body {
     padding-top: 1px;
     background: linear-gradient(180deg, #f9e9a7, #63c9c4);
 }
+
 .for-background {
     box-sizing: border-box;
     position: relative;
@@ -54,6 +74,7 @@ body {
     background-position-x: right;
     background-position-y: 27px;
 }
+
 .logo::before {
     content: "";
     display: block;
@@ -64,6 +85,7 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
 }
+
 .logo {
     width: 200px;
     height: 110px;
@@ -71,7 +93,7 @@ body {
     margin-top: -24px;
 }
 
-.logo a{
+.logo a {
     display: block;
     position: relative;
     width: 200px;
@@ -81,17 +103,20 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .header-headline {
     width: 920px;
     margin-top: 232px;
     margin-left: 189px;
 }
+
 .small-headline {
     font-family: 'Muller';
     font-weight: bold;
     font-size: 32px;
     color: #44a09b;
 }
+
 .headline {
     display: block;
     margin-top: 25px;
@@ -100,11 +125,13 @@ body {
     line-height: 85px;
     letter-spacing: 1px;
 }
-.headline-bold{
+
+.headline-bold {
     font-family: 'Muller';
     font-weight: bold;
     letter-spacing: 3px;
 }
+
 .register-now {
     box-sizing: border-box;
     width: 825px;
@@ -115,11 +142,13 @@ body {
     border-radius: 0px 110px 110px 0px;
     background-color: #ffffff;
 }
+
 .time-working {
     font-family: 'Muller-Meduim';
     font-size: 27px;
     color: #ff8141;
 }
+
 .register-url {
     box-sizing: border-box;
     display: block;
@@ -142,6 +171,7 @@ body {
 
     background-color: #ff8141;
 }
+
 .scroll-down {
     position: absolute;
     width: 1920px;
@@ -149,16 +179,19 @@ body {
 
     bottom: -6px;
 }
+
 .scroll-down a {
     text-decoration: none;
 }
-.scroll-down-text{
+
+.scroll-down-text {
     font-family: 'MyriadProRegular';
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #ffffff;
 }
+
 .big-triangle {
     position: relative;
     width: 0;
@@ -170,6 +203,7 @@ body {
     border-color: #ffffff transparent transparent transparent;
 
 }
+
 .small-triangle {
     position: absolute;
     width: 0;
@@ -178,7 +212,7 @@ body {
     left: -16px;
     border-style: solid;
     border-width: 22px 16px 16px 16px;
-    border-color: #69cac3 transparent transparent transparent ;
+    border-color: #69cac3 transparent transparent transparent;
 }
 
 /*main content page*/
@@ -186,28 +220,50 @@ body {
     display: flex;
     width: 1920px;
 }
+
 .use-pewtoon {
-    box-sizing:border-box;
+    box-sizing: border-box;
     position: relative;
     padding-top: 1px;
     width: 1085px;
     min-height: 915px;
-
-    background: linear-gradient(210deg, #f7d5b8 50%, #fac9ae 50%);
+    background-image: url("../img/video-background.png");
 }
-.for-play-button{
+
+.for-play-button {
     position: relative;
     margin-top: 380px;
     margin-left: 450px;
 }
+
 .play-circle {
     width: 180px;
     height: 180px;
     border: none;
     border-radius: 50%;
-    background-color: rgba(3,3,3,0.5);
+    background-color: rgba(3, 3, 3, 0.65);
 
 }
+
+.use-pewtoon-arrow{
+    position: absolute;
+    top: 525px;
+    left: 585px;
+}
+
+.use-pewtoon-text{
+    width: 170px;
+    position: absolute;
+    left: 705px;
+    top: 615px;
+    transform: rotate(10deg);
+    font-family: 'Story';
+    font-size: 26px;
+    letter-spacing: 3px;
+    text-align: center;
+
+}
+
 .play-triangle {
     position: absolute;
     width: 0;
@@ -219,36 +275,48 @@ body {
     top: 67px;
     left: 75px;
 }
-.right-side{
+
+.right-side {
     box-sizing: border-box;
     position: relative;
     width: 835px;
     padding-top: 120px;
     padding-left: 125px;
 }
-.right-side-headline{
-    font-family: 'MyriadProRegular';
+
+.right-side-headline {
+    font-family: 'VisbyCFExtraBold';
     font-size: 43px;
-    letter-spacing: 3px;
     color: #3a4a62;
     text-transform: uppercase;
 }
-.right-side-list{
+
+.right-side-list {
     width: 600px;
-    margin-top: 34px;
-    margin-left: -17px;
+    margin-top: 35px;
+    margin-left: -6px;
     list-style-image: url("../img/arrow.png");
 }
-.right-side-item{
-    font-family: 'MyriadProRegular';
+
+.right-side-heart {
+    list-style-image: url("../img/heart.png");
+}
+
+.right-side-heart .right-side-item {
+    padding-left: 7px;
+}
+
+.right-side-item {
+    font-family: 'VisbyCFLight';
     padding-left: 12px;
     font-size: 22px;
-    line-height: 23px;
-    margin-top: 16px;
+    line-height: 22px;
+    margin-top: 14px;
     letter-spacing: 1px;
     color: #575656;
 }
-.right-side-register{
+
+.right-side-register {
     display: block;
     position: absolute;
     width: 490px;
@@ -266,6 +334,7 @@ body {
     color: #ffffff;
     background-color: #ff8141;
 }
+
 /*footer*/
 .main-footer {
     width: 1920px;
@@ -273,7 +342,8 @@ body {
     background-color: #273d50;
     text-align: center;
 }
-.footer-headline{
+
+.footer-headline {
     font-family: 'VisbyCFExtraBold';
     font-weight: normal;
     font-style: normal;
@@ -282,17 +352,19 @@ body {
     font-size: 59px;
     line-height: 224px;
 }
+
 /*special class*/
 .centered {
     margin-left: auto;
     margin-right: auto;
 }
+
 .visually-hidden {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px);
     clip: rect(1px, 1px, 1px, 1px);
-    padding:0 !important;
-    border:0 !important;
+    padding: 0 !important;
+    border: 0 !important;
     height: 1px !important;
     width: 1px !important;
     overflow: hidden;
