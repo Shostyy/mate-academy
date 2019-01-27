@@ -224,9 +224,9 @@ body {
 .use-pewtoon {
     box-sizing: border-box;
     position: relative;
-    padding-top: 1px;
     width: 1085px;
     min-height: 915px;
+    padding-top: 1px;
     background-image: url("../img/video-background.png");
 }
 
@@ -252,8 +252,8 @@ body {
 }
 
 .use-pewtoon-text{
-    width: 170px;
     position: absolute;
+    width: 170px;
     left: 705px;
     top: 615px;
     transform: rotate(10deg);
@@ -321,8 +321,8 @@ body {
     position: absolute;
     width: 490px;
     height: 65px;
-    bottom: 126px;
     left: 127px;
+    bottom: 126px;
     line-height: 75px;
     text-align: center;
     font-family: 'Muller';
