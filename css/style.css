@@ -1,5 +1,5 @@
 /*fonts*/
-h1, h2, h3, h4, h5, h6{
+h1, h2{
     margin: 0;
     padding: 0;
 }
@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Muller-Regular';
     font-weight: normal;
     font-style: normal;
-    src: url('../fonts/Fontfabric - MullerLight.otf') format('opentype');
+    src: url('../fonts/MullerLight.ttf') format('truetype');
 }
 @font-face{
     font-family: 'Muller-Meduim';
@@ -38,18 +38,17 @@ body {
     padding: 0;
 }
 .main-header {
+    box-sizing: border-box;
     width: 1920px;
     min-height: 1080px;
-    box-sizing: border-box;
     padding-top: 1px;
-
     background: linear-gradient(180deg, #f9e9a7, #63c9c4);
 }
 .for-background {
-    width: 1920px;
-    min-height: 1080px;
     box-sizing: border-box;
     position: relative;
+    width: 1920px;
+    min-height: 1080px;
     background-image: url("../img/magnet.png");
     background-repeat: no-repeat;
     background-position-x: right;
@@ -61,7 +60,6 @@ body {
     position: relative;
     width: 200px;
     height: 110px;
-
     transform: rotate(-5deg);
     background-color: #ffffff;
     border-radius: 10px;
@@ -69,7 +67,6 @@ body {
 .logo {
     width: 200px;
     height: 110px;
-
     margin-left: 180px;
     margin-top: -24px;
 }
@@ -77,19 +74,17 @@ body {
 .logo a{
     display: block;
     position: relative;
-    top: -96px;
     width: 200px;
     height: 110px;
-
+    top: -96px;
     background-image: url("../img/logo.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 .header-headline {
+    width: 920px;
     margin-top: 232px;
     margin-left: 189px;
-
-    width: 920px;
 }
 .small-headline {
     font-family: 'Muller';
@@ -114,13 +109,11 @@ body {
     box-sizing: border-box;
     width: 825px;
     height: 212px;
-
+    margin-top: 54px;
     padding-left: 190px;
     padding-top: 44px;
-    margin-top: 54px;
     border-radius: 0px 110px 110px 0px;
     background-color: #ffffff;
-    border: 0px;
 }
 .time-working {
     font-family: 'Muller-Meduim';
@@ -128,11 +121,10 @@ body {
     color: #ff8141;
 }
 .register-url {
-    display: block;
     box-sizing: border-box;
+    display: block;
     width: 495px;
     height: 67px;
-    line-height: 65px;
     margin-top: 17px;
     padding-top: 4px;
     padding-left: 10px;
@@ -142,11 +134,11 @@ body {
     font-family: 'Muller';
     font-weight: bold;
     font-size: 32px;
+    line-height: 65px;
     letter-spacing: 2px;
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
-
 
     background-color: #ff8141;
 }
@@ -191,6 +183,7 @@ body {
 
 /*main content page*/
 .main-content {
+    display: flex;
     width: 1920px;
 }
 .use-pewtoon {
@@ -202,12 +195,15 @@ body {
 
     background: linear-gradient(210deg, #f7d5b8 50%, #fac9ae 50%);
 }
-.play-circle {
-    margin-top: 380px;
-    left: -3px;
+.for-play-button{
     position: relative;
+    margin-top: 380px;
+    margin-left: 450px;
+}
+.play-circle {
     width: 180px;
     height: 180px;
+    border: none;
     border-radius: 50%;
     background-color: rgba(3,3,3,0.5);
 
@@ -222,6 +218,53 @@ body {
 
     top: 67px;
     left: 75px;
+}
+.right-side{
+    box-sizing: border-box;
+    position: relative;
+    width: 835px;
+    padding-top: 120px;
+    padding-left: 125px;
+}
+.right-side-headline{
+    font-family: 'MyriadProRegular';
+    font-size: 43px;
+    letter-spacing: 3px;
+    color: #3a4a62;
+    text-transform: uppercase;
+}
+.right-side-list{
+    width: 600px;
+    margin-top: 34px;
+    margin-left: -17px;
+    list-style-image: url("../img/arrow.png");
+}
+.right-side-item{
+    font-family: 'MyriadProRegular';
+    padding-left: 12px;
+    font-size: 22px;
+    line-height: 23px;
+    margin-top: 16px;
+    letter-spacing: 1px;
+    color: #575656;
+}
+.right-side-register{
+    display: block;
+    position: absolute;
+    width: 490px;
+    height: 65px;
+    bottom: 126px;
+    left: 127px;
+    line-height: 75px;
+    text-align: center;
+    font-family: 'Muller';
+    font-weight: bold;
+    font-size: 34px;
+    border-radius: 33px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff8141;
 }
 /*footer*/
 .main-footer {
@@ -243,4 +286,14 @@ body {
 .centered {
     margin-left: auto;
     margin-right: auto;
+}
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
 }
